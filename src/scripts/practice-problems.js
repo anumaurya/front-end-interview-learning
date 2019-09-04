@@ -206,3 +206,51 @@ exercise7Form.addEventListener('submit', event => {
     exercise7InputAnswer.innerHTML = printLeapYears().join(', ');
     event.preventDefault();
 });
+
+
+function palindromeCheck(inputString){
+    const str = inputString.toLowerCase();
+    // find the middle index (starting from 0)
+    let middleIndex = Math.floor(str.length / 2);
+    let isPalindrome = true;
+    for (let i=0; i<middleIndex; i++) {
+        console.log(i);
+        if (str[i] !== str[(str.length-1)-i]){
+            isPalindrome = false;
+            break;
+        }
+   };
+   return isPalindrome
+}
+
+// Array.from(str).toString() === Array.from(str).reverse().toString()
+
+let exercise8Form = document.getElementById('exercise8');
+let exercise8Input = document.getElementById('exercise8Input');
+let exercise8InputAnswer = document.getElementById('exercise8InputAnswer');
+exercise8Form.addEventListener('submit', event => {
+    let isPalindrome = palindromeCheck(exercise8Input.value);
+    exercise8InputAnswer.innerHTML = isPalindrome;
+    event.preventDefault();
+});
+
+
+function getPairs (arr, sumVal){
+    let diffObj = {};
+    let returnArr = [];
+    arr.forEach((value, index) => {
+
+        let diff = sumVal - value;
+
+        if (diffObj[diff.toString()] !== undefined){
+            console.log('found a pair!');
+            returnArr.push([value, diff]);
+        } else {
+            diffObj[value.toString()] = true;
+        }
+
+    });
+    return returnArr;
+}
+
+console.log(getPairs([4, 1, 3, 9, 6], 10));

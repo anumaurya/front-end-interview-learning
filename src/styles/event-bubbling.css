@@ -1,0 +1,14 @@
+div#parent {
+    background-color: blue;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#child {
+    background-color: pink;
+    height: 80%;
+    width: 80%;
+}

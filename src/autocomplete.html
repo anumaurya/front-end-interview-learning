@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/autocomplete.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Autocomplete</h1>
+    </header>
+    <main>
+        <form>
+            <div class="container">
+                    Users autocomplete with datalist:
+                    <input list="usersList" name="users">
+                    <datalist id=usersList>
+                    </datalist>
+            </div>
+
+            <div class="container">
+                    Users autocomplete without datalist
+                    <input type="text" name="usersAutocomplete">
+            </div>
+            
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/autocomplete.js"></script>
+</body>
+
+</html>
