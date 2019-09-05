@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <header><h1>List and Arrays</h1></header>
+    <header>
+        <h1>List and Arrays</h1>
+    </header>
     <main>
         <nav></nav>
         <article>
             <ol>
                 <li>Write a function that returns the largest element in a list.
                     <form id="exercise1">
-                        <span> 
+                        <span>
                             <label for="exercise1Input">Enter a comma separated list of numbers (no validation!)</label>
                             <input type="text" name="exercise1Input" id="exercise1Input" required>
                         </span>
@@ -25,7 +27,36 @@
                     </form>
                 </li>
 
-                
+                <li>Suppose you're given a binary tree represented as an array.
+                    Write a function that determines whether the left or right branch of the tree is larger.
+                    The size fo each branch is the sum of the node values. The function should return the string "Right"
+                    if the right side is larger
+                    and "Left" if the left side is larger.
+                    If the tree has 0 nodes or if the size of the branches are equal, return the empty string.
+                    <p>
+                        Example Input: [3, 6, 2, 9, -1, 10]
+                        represents the following binary tree (where -1 is a non-existent node)
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3 <br>
+                            &nbsp; &nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; &nbsp; 2 <br>
+                            9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10 <br>
+                        </p>
+                    </p>
+                    <p>
+                        Example Output: Left
+                    </p>
+
+
+                    <form id="exercise2">
+                        <span>
+                            <label for="exercise2Input">Tree</label>
+                            <input type="text" name="exercise2Input" id="exercise2Input" required
+                                value="[3, 6, 2, 9, -1, 10]">
+                        </span>
+                        <button type="submit">Run!</button>
+                        <p class="answer" id="exercise2InputAnswer"></p>
+                    </form>
+                </li>
 
 
                 </ul>
