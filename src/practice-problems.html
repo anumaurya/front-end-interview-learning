@@ -118,7 +118,31 @@
                     </form>
                 </li>
 
-
+                <li>Given 2 identical DOM trees (but not equal) and one element  of the first DOM tree, how would you find this element in the second DOM tree?
+                    Tree1:
+                    <div id=tree1>
+                        <span>Something is here</span>
+                        <div>
+                            <div>
+                                <div></div>
+                                <div id="findMe1">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id=tree2>
+                        <span>Something else is here</span>
+                        <div>
+                            <div>
+                                <div></div>
+                                <div id="findMe2">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 </ul>
         </article>
         <aside></aside>

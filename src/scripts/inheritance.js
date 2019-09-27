@@ -69,6 +69,8 @@ console.log('grandchild.getEnhanced():', grandchild.getEnhanced());
 
 // *********************** Classical Inheritance
 console.log('\n\n----- Classical Inheritance WITHOUT class keyword-----');
+console.log('\n\n----- Classical Inheritance WITHOUT class keyword-----');
+console.log('\n\n----- Classical Inheritance WITHOUT class keyword-----');
 
 // Define the class
 var BaseClassical = function (val) {

@@ -1,0 +1,77 @@
+/*
+
+Write a program for a Simple Tetris game. User should be able to input the size of the game board. 
+
+ Each tile is of size 1x1. 
+
+ Tiles can be of 4 different colors: red, blue, yellow and green. 
+
+ User should be able to drop a tile in any column and the tile should go down to the bottom of the game board unless there’s a tile in that column and in that case the new tile should be placed above the previous tile. 
+
+ Also, write a function to display the game board at any give time.
+
+*/
+
+
+const _ = require('lodash');
+
+function sayHello() {
+  console.log('Hello, World');
+}
+
+_.times(5, sayHello);
+
+
+let Game = {  
+  constructor: function(columns, rows){ // 1=1x1 2: 2x4
+    this.board = new Array(); // [ col1, col2, ....]
+    this.board.fill(columns)
+    
+    this.board.forEach(function(col){
+      col = Array(rows);       // [ [row1, row2,...], [row1, row2. ...], ... ]
+    })
+
+
+/*
+var a = new Array(4).fill(new Array(4).fill('.'))
+
+a
+(4) [Array(4), Array(4), Array(4), Array(4)]
+0: (4) [".", ".", ".", "."]
+1: (4) [".", ".", ".", "."]
+2: (4) [".", ".", ".", "."]
+3: (4) [".", ".", ".", "."]
+length: 4
+
+*/
+  },
+  
+  dropTile: function(column, color){ // [ 0, 1, 2, 3, 4]
+    // [ col1 , col2, col3, .... ]
+    // [ [red, blue], [....], [...] ]
+    let column = this.board[column];
+    if (column.length ===1 && column[0]){
+      column[0] = color;
+    } else {
+      column.push(color);
+    }
+  },
+  
+  display: function() {
+    this.board.forEach(function(col, i){
+      console.log('printing for col: ', i);
+      col.forEach(function(row){
+        console.log(row);
+      });
+    });
+  }
+}
+
+
+let game = Object.create(Game);
+game.constructor(2, 2);
+game.dropTile(1, 'red');
+game.dropTile(1, 'blue');
+game.dropTile(1, 'yellow');
+game.dropTile(1, 'green');
+game.display();
