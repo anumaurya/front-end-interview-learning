@@ -13,8 +13,12 @@ module.exports = {
       Path.resolve(__dirname, '../src/scripts/throttle.js'),
       Path.resolve(__dirname, '../src/scripts/debounce.js'),
       Path.resolve(__dirname, '../src/scripts/two-sum.js'),
-      Path.resolve(__dirname, '../src/scripts/remove-duplicates.js')
-
+      Path.resolve(__dirname, '../src/scripts/remove-duplicates.js'),
+      Path.resolve(__dirname, '../src/scripts/palindrome.js'),
+      Path.resolve(__dirname, '../src/scripts/matrix.js'),
+      Path.resolve(__dirname, '../src/scripts/tic-tac-toe.js'),
+      // Path.resolve(__dirname, '../src/scripts/dynamic-programming.js'),
+      Path.resolve(__dirname, '../src/scripts/common-patterns.js')
     ]
   },
   output: {

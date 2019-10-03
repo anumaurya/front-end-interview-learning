@@ -4,6 +4,7 @@ function debounce(fn, delay){
         const args = arguments;
         const context = this;
         if (timerId){
+            console.log('clearing', timerId, fn);
             clearTimeout(timerId);
         }
         timerId = setTimeout(() => {
@@ -18,3 +19,49 @@ function debounce(fn, delay){
 
 //     usersWithDatalistInputNode.addEventListener('keyup', debounce(keyUpHandler, 500));
 // })
+window.addEventListener('load', (event)=>{
+    console.log('debounce tests')
+
+    debounce(function(){
+        console.log('fn1');
+    }, 0)();
+
+    debounce(function(){
+        console.log('fn1');
+    }, 0)();
+
+    debounce(function(){
+        console.log('fn1');
+    }, 0)();
+
+    debounce(function(){
+        console.log('fn1');
+    }, 0)();
+
+    debounce(function(){
+        console.log('fn1');
+    }, 0)();
+
+    debounce(function(){
+        console.log('fn1');
+    }, 0)();
+
+
+    // setTimeout(()=>{
+    //     debounce(function(){
+    //         console.log('fn1');
+    //     },)();
+    // }, 500);
+
+    // setTimeout(()=>{
+    //     debounce(function(){
+    //         console.log('fn2');
+    //     }, 300)();
+    // }, 1000);
+
+
+    // debounce(function(){
+    //     console.log('fn3');
+    // }, 500)();
+
+})
