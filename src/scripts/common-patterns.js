@@ -2,7 +2,7 @@
  * Frequency Counter Pattern
  * 
  * Problem: 
- * Write a function called same that takes 2 arraus
+ * Write a function called same that takes 2 arrays
  * return true when every value in the first array has a corresponding squared in the secound
  * Frequency must be the same
  * 

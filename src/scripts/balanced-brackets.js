@@ -1,5 +1,5 @@
 
- /* Balanced Brackets -- atlassian
+ /* Balanced Brackets 
  * -----------------
  * A bracket is considered to be any one of the following characters:
  * ( )  { }  [ ]
@@ -32,41 +32,6 @@ console.log( isBalanced("a b [d] { (g) (h) i [-[ {;} ]-] }") ); // true
 // ( [ ) ]
 
 
-function isBalanced(inputString){
-    // [  'a b [d] { (g) (h) i [-[ {;} ]-] }' ]
-    const array = inputString.split('');
-    let stack = []; // {']' : true}
-    
-    array.forEach((a, index)=>{
-    
-        
-        if (!topOfStack){
-            topOfStack.push(a);
-            return;
-        }
-        
-        if (a === '(' || a==='[' || a === '{'){
-             //if (topOfStack === '(' || topOfStack==='[' || topOfStack === '{'){
-                 topOfStack.push(a);
-            // }
-        } else if (a === ')' || a===']' || a === '}'){
-             let topOfStack = stack.pop();
-            if (topOfStack === '(' || topOfStack==='[' || topOfStack === '{'){
-                return false;
-            } 
-        }
-       
-        
-    });
-    
-    return stack.length !==0;
-    
-    
-}
-
-
-
-////
 function isOpenBracketType(string){
     return (string === '(' || string ==='[' || string === '{')
 }

@@ -18,7 +18,9 @@ module.exports = {
       Path.resolve(__dirname, '../src/scripts/matrix.js'),
       Path.resolve(__dirname, '../src/scripts/tic-tac-toe.js'),
       // Path.resolve(__dirname, '../src/scripts/dynamic-programming.js'),
-      Path.resolve(__dirname, '../src/scripts/common-patterns.js')
+      Path.resolve(__dirname, '../src/scripts/common-patterns.js'),
+      Path.resolve(__dirname, '../src/scripts/medium.js'),
+      Path.resolve(__dirname, '../src/scripts/apple.js')
     ]
   },
   output: {

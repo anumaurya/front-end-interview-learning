@@ -44,25 +44,24 @@ var fib2 = function fibonacci2(n) {
 };
 
 // Coin change
+// function coinChnage(denominations, value, memo = [1, 1]){
 
-function coinChnage(denominations, value, memo = [1, 1]){
+//     if (memo[value]){
+//         return memo[value];
+//     }
 
-    if (memo[value]){
-        return memo[value];
-    }
+//     for (let i=denominations.length-1; i>=0; i++){
+//         let denomination = denominations[i];
 
-    for (let i=denominations.length-1; i>=0; i++){
-        let denomination = denominations[i];
+//         if (denomination < value ){
+//             let remainder = value % denomination;
+//             if (!remainder){
 
-        if (denomination < value ){
-            let remainder = value % denomination;
-            if (!remainder){
+//             }
+//         }
+//     }
 
-            }
-        }
-    }
+// }
 
-}
-
-const denominations = [1, 5, 10, 25];
+// const denominations = [1, 5, 10, 25];
 

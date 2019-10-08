@@ -1,9 +1,9 @@
 
 
-function animalFetcher(input, ...functionParams){
+function curryingFunction(input, ...functionParams){
     //let firstParam = functionParams[0];
 
-    console.log('animalFetcher', functionParams);
+    console.log('curryingFunction', functionParams);
     let params = input;
     let output = [];
     for (let i=0; i<functionParams.length; i++){
@@ -26,4 +26,4 @@ function three(input){
     return 'three ' + input;
 }
 
-console.log(animalFetcher('hello', one, two, three));
+console.log(curryingFunction('hello', one, two, three));
