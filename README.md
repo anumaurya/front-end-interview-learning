@@ -1,8 +1,6 @@
-# Webpack Frontend Starterkit
+# Front-end Web Learning (:construction: WIP)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/wbkd/webpack-starter.svg)](https://greenkeeper.io/)
-
-A lightweight foundation for your next webpack based frontend project.
+The goal of this project is to have a repository of common front-end web practice problems and their solutions, ranging from data structures, common algorithm patterns to fun games.
 
 
 ### Installation
