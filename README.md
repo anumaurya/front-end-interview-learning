@@ -2,6 +2,8 @@
 
 The goal of this project is to have a repository of common front-end web practice problems and their solutions, ranging from data structures, common algorithm patterns to fun games.
 
+This project is forked from Webpack Frontend Starterkit for bootstrapping and is a WIP.
+
 
 ### Installation
 
